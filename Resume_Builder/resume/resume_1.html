@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..</title>
+    <link rel="stylesheet" href="resume_1.css">
+    <link rel="shortcut icon" href="/favicon/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+        rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="resume">
+            <div class="header">
+                <div class="your_img">
+                    <img id="blah" src="" />
+                    <input type="file" onchange="readURL(this);" class="in_file" />
+                </div>
+                <div class="intro">
+                    <input type="text" placeholder="Full Name" class="full_name">
+                    <input type="text" placeholder="Designation" class="designation">
+                </div>
+                <div class="hr"></div>
+            </div>
+            <div class="vertical"></div>
+            <div class="body">
+                <div class="left">
+                    <div class="skills">
+                        <h2>SKILLS</h2>
+                        <ul>
+                            <li><input type="text" class="fill_left" placeholder="skill"></li>
+                            <li><input type="text" class="fill_left" placeholder="skill"></li>
+                            <li><input type="text" class="fill_left" placeholder="skill"></li>
+                        </ul>
+                    </div>
+                    <div class="languages">
+                        <h2>LANGUAGES</h2>
+                        <ul>
+                            <li><input type="text" class="fill_left" placeholder="language"></li>
+                            <li><input type="text" class="fill_left" placeholder="language"></li>
+                            <li><input type="text" class="fill_left" placeholder="language"></li>
+                        </ul>
+                    </div>
+                    <div class="interest">
+                        <h2>INTEREST</h2>
+                        <ul>
+                            <li><input type="text" class="fill_left" placeholder="interest"></li>
+                            <li><input type="text" class="fill_left" placeholder="interest"></li>
+                            <li><input type="text" class="fill_left" placeholder="interest"></li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <h2>Social Links</h2>
+                        <div class="social">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            <div class="main">
+                <div class="education">
+                    <h2>EDUCATION</h2>
+                    <ul>
+                        <li><input type="text" class="fill_right" placeholder="education"></li>
+                        <li><input type="text" class="fill_right" placeholder="education"></li>
+                        <li><input type="text" class="fill_right" placeholder="education"></li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h2>WORK EXPERIENCE</h2>
+                    <ul>
+                        <li><input type="text" class="fill_right" placeholder="experience"></li>
+                        <li><input type="text" class="fill_right" placeholder="experience"></li>
+                    </ul>
+                </div>
+                <div class="org">
+                    <h2>ORGANIZATIONS</h2>
+                    <ul>
+                        <li><input type="text" class="fill_right" placeholder="organization"></li>
+                        <li><input type="text" class="fill_right" placeholder="organization"></li>
+                        <li><input type="text" class="fill_right" placeholder="organization"></li>
+                    </ul>
+                </div>
+                <div class="certificate">
+                    <h2>CERTIFICATES</h2>
+                    <ul>
+                        <li><input type="text" class="fill_right" placeholder="certificate"></li>
+                        <li><input type="text" class="fill_right" placeholder="certificate"></li>
+                    </ul>
+                </div>
+                <div class="projects">
+                    <h2>PROJECTS</h2>
+                    <ul>
+                        <li><input type="text" class="fill_right" placeholder="project"></li>
+                        <li><input type="text" class="fill_right" placeholder="project"></li>
+                        <li><input type="text" class="fill_right" placeholder="project"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <button class="download" onclick="window.print()">Download</button>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah').attr('src', e.target.result).width(150).height(150);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

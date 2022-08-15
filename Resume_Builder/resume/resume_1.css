@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(31, 29, 29);
+    padding-bottom: 150px;
+}
+.resume{
+    width: 740px;
+    height: 940px;
+    background: #fff;
+    margin: 5px 0px 168px 0px;
+}
+.header{
+    display: flex;
+}
+.your_img{
+    width: 158px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 16px;
+    padding: 36px;
+}
+#blah{
+    border-radius: 100%;
+    position: absolute;
+    margin: -40px;
+}
+.in_file{
+    margin: 36px -10px;
+    width: 90px;
+}
+.intro{
+    display: block;
+    margin: 50px 0px 0px 98px;
+}
+.full_name{
+    border: none;
+    font-size: 20pt;
+}
+.designation{
+    border: none;
+    font-size: 15pt;
+}
+.hr{
+    padding: 2px;
+    position: absolute;
+    margin: 188px 0px;
+    width: 740px;
+    background: #000;
+}
+.vertical {
+    padding: 0.2px;
+    position: absolute;
+    margin: 376px -110px;
+    width: 698px;
+    background: #000;
+    transform: rotate(90deg);
+}
+.skills, .languages, .interest{
+    margin: 39px 47px;
+}
+.fill_left{
+    margin: 5px 0px;
+    border: none;
+    font-size: 12pt;
+}
+.fill_right{
+    margin: 5px 0px;
+    width: 325px;
+    border: none;
+    font-size: 12pt;
+}
+/* --------------------------------------------- */
+.body{
+    display: flex;
+}
+.main{
+    position: absolute;
+    margin: 35px 298px;
+}
+.education, .experience, .org, .certificate, .projects{
+    margin-bottom: 22px;
+}
+/* -------------------------------------------- */
+.footer{
+    position: absolute;
+    margin: 23px 46px;
+}
+.social{
+    font-size: 22pt;
+    margin: 52px 0px;
+}
+.download{
+    margin-top: 440px;
+    margin-left: 200px;
+    background: blue;
+    color: #fff;
+    border: none;
+    padding: 17px 107px;
+}

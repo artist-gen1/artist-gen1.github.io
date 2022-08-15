@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 2px solid black;
+    width: 115px;
+    height: 106px;
+    background: yellow;
+    padding: 4px;
+}
+
+.line_1 {
+    position: absolute;
+    margin: -5px 36px;
+    width: 40px;
+    height: 1px;
+    background: #000;
+}
+
+.line_2 {
+    margin: 7px 11px;
+    width: 83px;
+    height: 1px;
+    background: #000;
+}
+
+.top {
+    margin: 2px 55px;
+    color: #fff;
+    font-family: cursive;
+}
+
+.main {
+    display: flex;
+    padding: 70px 0px;
+    justify-content: center;
+    height: 500px;
+    background: #4df447;
+}
+
+.main_1 {
+    width: 270px;
+    height: 214px;
+    border: 2px solid #000;
+    margin: 75px -192px;
+    padding: 61px 0px;
+    text-align: center;
+    font-size: 20pt;
+    background: orange;
+    border: none;
+}
+
+.create_resume {
+    width: 200px;
+    height: 46px;
+    margin: 267px -154px;
+    background: rgb(77, 77, 228);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 13pt;
+}
